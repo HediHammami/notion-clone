@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA01ixvGJi7rho9CbaITRds_oZ_Kesm_bo",
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: "notion-blog-2a4c5.firebaseapp.com",
   projectId: "notion-blog-2a4c5",
   storageBucket: "notion-blog-2a4c5.appspot.com",
